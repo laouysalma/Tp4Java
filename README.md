@@ -1,6 +1,6 @@
 TP 3 : Boucles & Tableaux en Java
 
-Exercice 1:
+Exercice 1: 
 ![image alt](https://github.com/laouysalma/Tp4Java/blob/main/Ex1.png?raw=true)
 
 Exercice 2:
