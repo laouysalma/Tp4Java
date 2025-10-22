@@ -1,18 +1,25 @@
 import java.util.Scanner;
 
-public class Ex6{
+public class Ex6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Entrez la taille du tableau (n) : ");
         int n = sc.nextInt();
+
+        System.out.print("Entrez la taille de la fenêtre (k) : ");
         int k = sc.nextInt();
+
         int[] T = new int[n];
+        int maxVal = 0;
+
+        System.out.println("Entrez les " + n + " entiers du tableau :");
         for (int i = 0; i < n; i++) {
             T[i] = sc.nextInt();
+            if (T[i] > maxVal) maxVal = T[i];
         }
 
-        int MAXV = 100000;
-        int[] freq = new int[MAXV + 1];
+        int[] freq = new int[maxVal + 1];
         int distinct = 0;
 
         for (int i = 0; i < k; i++) {
@@ -20,7 +27,7 @@ public class Ex6{
             freq[T[i]]++;
         }
 
-        System.out.print(distinct);
+        System.out.print("Résultat : " + distinct);
 
         for (int i = k; i < n; i++) {
             int out = T[i - k];
@@ -35,6 +42,6 @@ public class Ex6{
         }
 
         System.out.println();
-        
+        sc.close();
     }
 }

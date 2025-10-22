@@ -13,7 +13,7 @@ public class EX3 {
 		for (int i = 0; i < n; i++) {
 
 			carre[i] = nbrImpair * nbrImpair;
-			System.out.println(carre[i] + "est lecarrre de " + nbrImpair);
+			System.out.println(carre[i] + " est le carrre de " + nbrImpair);
 			nbrImpair += 2;
 
 		}
